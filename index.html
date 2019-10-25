@@ -151,6 +151,70 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-获取节点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/25/%E8%8E%B7%E5%8F%96%E8%8A%82%E7%82%B9/">获取节点</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/25/%E8%8E%B7%E5%8F%96%E8%8A%82%E7%82%B9/" class="archive-article-date">
+  	<time datetime="2019-10-25T03:13:46.042Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 获取节点<br>date: 2019-10-25 11:13:46<br>tags:<br>—封装函数兼容低版本IE浏览器<br> 1.getElementsByClassName()<br> 2.低版本IE不支持getElementsByClassName()方法<br>     function elementByClassName(parent, classstr){<br>            var nodes = parent.getElementsByTagName(“*”);<br>            //1.找到parent下所有元素节点<br>            var result =[];<br>            for(var i = 0; i &lt; nodes.length; i++){<br>                //2.将符合条件的元素节点放入result[]中；<br>                if(nodes[i].ClassName == classstr){<br>                    result.push(nodes[i]);<br>                }<br>            }<br>            return result;<br>        }<br> /*<br>    封装这个函数是因为低版本IE没有getElementsByClassName()这个方法<br>    所以要用getElementsByTagName()先找到父节点位置下所有的标签，再用遍历方式比对每个标签的ClassName是否符合给出的Classstr， 若符合则添加进result[]中<br>*/</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/25/%E8%8E%B7%E5%8F%96%E8%8A%82%E7%82%B9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-frist-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
