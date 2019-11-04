@@ -151,6 +151,93 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-position" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/04/position/">position</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/04/position/" class="archive-article-date">
+  	<time datetime="2019-11-04T02:46:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>position：<br>    absolute:绝对定位；它可以相对于各种各样的东西进行定位，除了 static 其他都可以。<br>当一个元素设置了position:absolute属性之后，而它的父元素的属性为position:relative则，它不再是相对于文档定位，而是相对于父元素定位。这一点非常重要。最最重要的是，父元素设置为position:relative并不会脱离文档流，也就是说——利用给父元素设置position:relative属性，再将子元素设置为position:absolute就可以在文档流中实现需要的定位。<br>    fixed：固定定位； 相对浏览器定位；它相对于浏览器的窗口进行定位。同时———它会脱离文档流。<br>    relative:相对定位; 相对自己文档流中的原始位置定位; 他的位置可以使用 left、right、top、bottom、z-index等定位参数，但是，他的存在和移动，会影响文档中紧跟在他周围的元素的， 【它的位移是根据它在文档流中的原始位置发生的】。<br>总结：<br>        position: relative;不会脱离文档流，position: fixed;position: absolute;会脱离文档流<br>    position: relative; 相对于自己在文档流中的初始位置偏移定位。<br>    position: fixed; 相对于浏览器窗口定位。<br>    position: absolute; 是相对于父级非position:static 浏览器定位。<br>    如果没有任何一个父级元素是非position:static属性，则会相对于文档定位。<br>    这里它的父级元素是包含爷爷级元素、祖爷爷级元素、祖宗十八代级元素的。任意一级都可以。<br>    如果它的父级元素和爷爷级元素都是非position:static 属性，则，它会选择距离最近的父元素。</p>
+<p>z-index:<br>    当position：absolute;relative;fixed;才会生效， z-index越小的元素发生层叠时会被摆在最底层；</p>
+<html>
+<head>
+<style type="text/css">
+img.x
+{
+position:absolute;
+left:0px;
+top:0px;
+z-index:-1
+}
+</style>
+</head>
+<body>
+<h1>这是一个标题</h1>
+<img class="x" src="/i/eg_mouse.jpg" /> 
+<p>默认的 z-index 是 0。Z-index -1 拥有更低的优先级。</p>
+</body>
+</html>
+![](z-index.jpg)
+
+
+<p>display:<br>  inline:<br>    使元素变成行内元素，拥有行内元素的特性，即可以与其他行内元素共享一行，不会独占一行.<br>    不能更改元素的height，width的值，大小由内容撑开.<br>    可以使用padding，margin的left和right产生边距效果，但是top和bottom就不行.<br>  block:<br>      使元素变成块级元素，独占一行，在不设置自己的宽度的情况下，块级元素会默认填满父级元素的宽度.<br>    能够改变元素的height，width的值.<br>    可以设置padding，margin的各个属性值，top，left，bottom，right都能够产生边距效果.<br>  inline-block:<br>    使元素变成行内元素，拥有行内元素的特性，即可以与其他行内元素共享一行，不会独占一行.<br>    能够改变元素的height，width的值.<br>    可以设置padding，margin的各个属性值，top，left，bottom，right都能够产生边距效果.</p>
+<p>总结：<br>    a.对于横向排列东西来说，我更倾向与使用inline-block来布局，因为这样清晰，也不用再像浮动那样清除浮动，害怕布局混乱等等。<br>      b.对于浮动布局就用于需要文字环绕的时候，毕竟这才是浮动真正的用武之地，水平排列的是就交给inline-block了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/04/position/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-获取节点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -278,19 +365,19 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Hello-World1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/24/hello-world/">Hello World</a>
+      <a class="article-title" href="/2019/10/24/Hello-World1/">Hello World</a>
     </h1>
   
 
         
-        <a href="/2019/10/24/hello-world/" class="archive-article-date">
+        <a href="/2019/10/24/Hello-World1/" class="archive-article-date">
   	<time datetime="2019-10-24T12:33:05.216Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
 </a>
         
@@ -323,7 +410,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/24/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/10/24/Hello-World1/">展开全文 >></a>
         </p>
       
 
